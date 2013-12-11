@@ -113,11 +113,14 @@ public class Parser {
             String res = "";
             int i = 0;
 
-            while (i < s.length() &&
-                    (Character.isLetter(s.charAt(i)) && Character.isUpperCase(s.charAt(i)))) {
-
-                res += s.charAt(i);
+            if (s.length() > 0 &&
+                (Character.isLetter(s.charAt(0)) && Character.isUpperCase(s.charAt(0))) ) {
+                res += s.charAt(0);
                 i++;
+                while (i < s.length() && Character.isDigit(s.charAt(i))) {
+                    res += s.charAt(i);
+                    i++;
+                }
             }
 
             if (res.isEmpty()) {
