@@ -1,0 +1,5 @@
+USAGE:
+
+1. Write statement you want to prove in "statementsProving.in" file
+2. Run com.gmail.mazinva.Main
+3. Check out the result in "statementsProving.out" file
