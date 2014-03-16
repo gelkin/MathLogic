@@ -17,13 +17,12 @@ public class Main {
         if (inputString == null) {
             throw new MathLogicException("Empty input");
         }
+
         Expression phi = (new Parser()).parse(inputString);
         StatementsProving statementsProving= new StatementsProving(phi);
         List<String> resultProof = statementsProving.getProof();
-        if (resultProof != null) {
-            for (int i = 0; i < resultProof.size(); i++)
-                out.println(DeductionTheorem.parse(resultProof.get(i)));
-        }
+        for (int i = 0; i < resultProof.size(); i++)
+            out.println(resultProof.get(i));
     }
 
     public void run() {

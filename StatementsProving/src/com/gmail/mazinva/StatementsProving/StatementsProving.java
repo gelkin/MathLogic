@@ -19,7 +19,7 @@ public class StatementsProving {
     private List<String> globalProof;
     private Expression phi;
     private boolean isStatementTrue = true;
-    
+
     public StatementsProving(Expression phi) {
         globalProof = new ArrayList<String>();
         this.phi = phi;
@@ -27,10 +27,14 @@ public class StatementsProving {
     
     public List<String> getProof() throws MathLogicException {
         setIsStatementTrue(START_INDEX);
-        if (!isStatementTrue) return null;
+        if (!isStatementTrue) return globalProof;
         getProofForAllValues(START_INDEX);
         cutConditions();
         return globalProof;
+    }
+
+    public boolean isStatementTrue() {
+        return isStatementTrue;
     }
 
     private void setIsStatementTrue(int k) {
@@ -56,7 +60,7 @@ public class StatementsProving {
                     msg += (vars.get(s))? s + " = И": s + " = Л";
                 }
 
-                System.out.println(msg);
+                globalProof.add(msg);
                 isStatementTrue = false;
             }
         }
