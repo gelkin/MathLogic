@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="jar" name="DeductionTheorem:jar">
-    <output-path>$PROJECT_DIR$/out/artifacts/DeductionTheorem_jar</output-path>
-    <root id="archive" name="DeductionTheorem.jar">
-      <element id="module-output" name="DeductionTheorem" />
-    </root>
-  </artifact>
-</component>
