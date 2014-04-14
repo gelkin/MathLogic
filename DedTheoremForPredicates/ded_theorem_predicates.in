@@ -1,0 +1,5 @@
+C(a,(b)), A(a,b,(z,x))|-?xB->A(a,b,(z,x))
+A(a,b,(z,x))
+A(a,b,(z,x))->B->A(a,b,(z,x))
+B->A(a,b,(z,x))
+?wB->A(a,b,(z,x))
