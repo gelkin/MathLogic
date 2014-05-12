@@ -1,0 +1,2 @@
+A(b,c,d(e,f(a)+p',g213))->A->A(b,c,d(e,f(a)+p',g213))
+A(b,c,d(e,f(a)+p',g213))->@a(A->A(b,c,d(e,f(a)+p',g213)))
