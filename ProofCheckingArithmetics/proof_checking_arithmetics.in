@@ -1,2 +1,1 @@
-A(b,c,d(e,f(a)+p',g213))->A->A(b,c,d(e,f(a)+p',g213))
-A(b,c,d(e,f(a)+p',g213))->@a(A->A(b,c,d(e,f(a)+p',g213)))
+@a?bP(a,a1,a2,a3)->?bP(b,a1,a2,a3)

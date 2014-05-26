@@ -3,6 +3,7 @@ package com.gmail.mazinva.mathlogic;
 import com.gmail.mazinva.proofcheckingarithmetics.Main;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
 public class Brackets extends AbstUnArithOper {
@@ -15,14 +16,11 @@ public class Brackets extends AbstUnArithOper {
         return "(" + term.toString() + ")";
     }
 
-    // todo: List(Stack) -> Queue
     public List<Pair> pathToFirstFreeEntry(String x) {
         List<Pair> pathFromCurPos = term.pathToFirstFreeEntry(x);
         if (pathFromCurPos != null) {
-            List<Pair> resultPath = new ArrayList<Pair>();
-            resultPath.add(new Pair(Main.BRACKETS, null));
-            resultPath.addAll(pathFromCurPos);
-            return resultPath;
+            ((LinkedList) pathFromCurPos).addFirst(new Pair(Main.BRACKETS, null));
+            return pathFromCurPos;
         } else {
             return null;
         }

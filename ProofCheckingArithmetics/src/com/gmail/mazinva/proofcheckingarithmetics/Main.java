@@ -34,13 +34,7 @@ public class Main {
 
     private void solve() throws IOException, MathLogicException {
         StringBuilder incorrectInputMsg = new StringBuilder();
-        /*
-        String inputString = in.nextLine();
-        Expression exp = (new Parser()).parse(inputString);
-        System.out.println(exp.toString());
-        */
 
-        //
         String inputString;
         // Read proof
         while ((inputString = in.nextLine()) != null) {
@@ -50,7 +44,6 @@ public class Main {
         // Check proof
         Expression curExp;
         String curLine;
-        String tmp;
         for (int i = 0; i < inputProof.size(); i++) {
             curExp = inputProof.get(i);
             curLine = curExp.toString();
@@ -109,7 +102,6 @@ public class Main {
         } else {
             out.println(CORRECT_PROOF_MSG);
         }
-        //
     }
 
     private String isModusPonensOfTwoLines(String curLine, int k) {

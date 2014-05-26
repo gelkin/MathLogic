@@ -3,6 +3,7 @@ package com.gmail.mazinva.mathlogic;
 import com.gmail.mazinva.proofcheckingarithmetics.Main;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
 public class Increment extends AbstUnArithOper {
@@ -19,13 +20,11 @@ public class Increment extends AbstUnArithOper {
     }
 
     public List<Pair> pathToFirstFreeEntry(String x) {
-        List<Pair> resultPath = new ArrayList<Pair>();
         List<Pair> pathFromCurPos = term.pathToFirstFreeEntry(x);
 
         if (pathFromCurPos != null) {
-            resultPath.add(new Pair(Main.INCREMENT, null));
-            resultPath.addAll(pathFromCurPos);
-            return resultPath;
+            ((LinkedList) pathFromCurPos).addFirst(new Pair(Main.INCREMENT, null));
+            return pathFromCurPos;
         }
 
         return null;

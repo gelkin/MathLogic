@@ -1,6 +1,7 @@
 package com.gmail.mazinva.mathlogic;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
 public abstract class AbstractBinaryOperation implements Expression {
@@ -16,21 +17,18 @@ public abstract class AbstractBinaryOperation implements Expression {
     public abstract String toStringWithReplacedVar(Term term, String var);
 
     protected List<Pair> pathToFirstFreeEntryImpl(String x, String operationType) {
-        List<Pair> resultPath = new ArrayList<Pair>();
         List<Pair> pathFromCurPos;
 
         pathFromCurPos = left.pathToFirstFreeEntry(x);
         if (pathFromCurPos != null) {
-            resultPath.add(new Pair(operationType, "left"));
-            resultPath.addAll(pathFromCurPos);
-            return resultPath;
+            ((LinkedList) pathFromCurPos).addFirst(new Pair(operationType, "left"));
+            return pathFromCurPos;
         }
 
         pathFromCurPos = right.pathToFirstFreeEntry(x);
         if (pathFromCurPos != null) {
-            resultPath.add(new Pair(operationType, "right"));
-            resultPath.addAll(pathFromCurPos);
-            return resultPath;
+            ((LinkedList) pathFromCurPos).addFirst(new Pair(operationType, "right"));
+            return pathFromCurPos;
         }
 
         return null;

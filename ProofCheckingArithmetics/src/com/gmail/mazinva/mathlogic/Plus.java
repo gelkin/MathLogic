@@ -11,7 +11,6 @@ public class Plus extends AbstBinArithOper {
         super(left, right);
     }
 
-    // todo - life without brackets?
     public String toString() {
         return left.toString() + "+" + right.toString();
     }

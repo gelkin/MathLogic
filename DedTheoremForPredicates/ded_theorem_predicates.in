@@ -1,5 +1,7 @@
-C(a,(b)), A(a,b,(z,x))|-?xB->A(a,b,(z,x))
-A(a,b,(z,x))
-A(a,b,(z,x))->B->A(a,b,(z,x))
-B->A(a,b,(z,x))
-?wB->A(a,b,(z,x))
+P(a)|-@aP(a)
+P(a)
+A->A->A
+P(a)->(A->A->A)->P(a)
+(A->A->A)->P(a)
+(A->A->A)->@aP(a)
+@aP(a)

@@ -2,6 +2,7 @@ package com.gmail.mazinva.mathlogic;
 
 import com.gmail.mazinva.proofcheckingarithmetics.Main;
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
 public class TermWithArgs extends Term {
@@ -24,7 +25,6 @@ public class TermWithArgs extends Term {
     @Override
     public String toString() {
         // Supposed, that subTerms.size() > 0
-        // todo
         if (subTerms.size() == 0) {
             System.err.println("ERROR. No subterms in TermWithArgs.toString() =(");
         }
@@ -44,10 +44,8 @@ public class TermWithArgs extends Term {
         for (int i = 0; i < subTerms.size(); i++) {
             List<Pair> pathFromCurPos = subTerms.get(i).pathToFirstFreeEntry(x);
             if (pathFromCurPos != null) {
-                List<Pair> resultPath = new ArrayList<Pair>();
-                resultPath.add(new Pair(Main.TERMWITHARGS, new Pair(value, i)));
-                resultPath.addAll(pathFromCurPos);
-                return resultPath;
+                ((LinkedList) pathFromCurPos).addFirst(new Pair(Main.TERMWITHARGS, new Pair(value, i)));
+                return pathFromCurPos;
             }
         }
 

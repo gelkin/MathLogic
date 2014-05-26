@@ -185,7 +185,7 @@ public class Main {
     private static final String RES_PATH = "./res/";
     private FastScanner inProof;
     private void loadForallProof() throws MathLogicException {
-        String path = "A->B->@varC";
+        String path = "A-_B-_@varC";
         inProof = new FastScanner(new File(RES_PATH + path));
         String s;
         while ((s = inProof.next()) != null) {
@@ -194,7 +194,7 @@ public class Main {
     }
 
     private void loadExistProof() throws MathLogicException {
-        String path = "A->?varB->C";
+        String path = "A-_?varB-_C";
         inProof = new FastScanner(new File(RES_PATH + path));
         String s;
         while ((s = inProof.next()) != null) {

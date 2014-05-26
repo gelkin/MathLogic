@@ -4,9 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Stack;
 
-
-// todo: Brackets for terms, brackets for predicates
-// todo: all exceptions == "Error in ..s.." and nothing more
 public class Parser {
 
     // Needed to keep right associativity of implication
@@ -19,9 +16,8 @@ public class Parser {
     public Expression parse(String s) throws MathLogicException {
         if (s.isEmpty()) throw new MathLogicException("String to parse is empty");
         Result<Expression> result = implication(s);
-        // todo
         if (!result.rest.isEmpty()) {
-            throw new MathLogicException("Couldn't parse whole string");
+            throw new MathLogicException("Error in \'" + result.rest + "\'");
         }
         implicationList.clear();
         return result.exp;
@@ -47,7 +43,6 @@ public class Parser {
             String next = current.rest.substring(2);
             current = conjunction(next);
             if (current.exp instanceof Term) {
-                // todo orthodox out exception messages
                 throw new MathLogicException("Implication had a bad argument in \'" + next + "\'");
             }
         }
@@ -84,7 +79,7 @@ public class Parser {
             if (!(current.exp instanceof Term)) {
                 exp = new Conjunction(exp, current.exp);
             } else {
-                throw new MathLogicException("Disjunction had a bad argument\n");
+                throw new MathLogicException("Conjunction had a bad argument\n");
             }
         }
 
@@ -161,8 +156,6 @@ public class Parser {
         Expression exp = current.exp;
 
         if (!(exp instanceof Term)) {
-            // todo: as (term1 = term2) - predicate, then ((term1 = term2) = term3) - shouldn't exist
-            // todo: so 'while' -> 'if'
             return current;
         }
 
@@ -176,7 +169,7 @@ public class Parser {
             }
         }
 
-        return new Result(exp, current.rest); // todo return new equlity or predicate
+        return new Result(exp, current.rest);
     }
 
     private Result plus(String s) throws MathLogicException {
@@ -231,11 +224,10 @@ public class Parser {
     }
 
     private Result increment(String s) throws MathLogicException {
-        // todo
         Result current = brackets(s);
         Expression exp = (Expression) current.exp;
         if (current.exp instanceof Term) {
-            if (current.rest.length() > 0 && current.rest.charAt(0) == '\'') {
+            while (current.rest.length() > 0 && current.rest.charAt(0) == '\'') {
                 exp = new Increment((Term) exp);
                 current.rest = current.rest.substring(1);
             }
@@ -262,12 +254,6 @@ public class Parser {
                 if (r.rest.length() > 0 && r.rest.charAt(0) == '\'') {
                     r.exp = new Increment((Term) r.exp);
                     r.rest = r.rest.substring(1);
-                } else {
-                    // todo
-                    // List<Term> subTerms = new ArrayList<Term>();
-                    // subTerms.add((Term) r.exp);
-                    //  - problem seems to be solved in 'bracketsInTerms'
-                    r.exp = new Brackets((Term) r.exp); // r.exp -> (r.exp)
                 }
             }
 
@@ -292,16 +278,9 @@ public class Parser {
 
         // didn't find predicate - maybe will find term
         if (res.length() == 0) {
-            //todo System.out.println("didn't find predicate - maybe will find term");
             Result<Term> result = terms(s);
             return result;
         }
-
-        /*
-        if (res.length() == 0) {
-            throw new MathLogicException("Error in \"" + s + "\". Most probably some term is missed.");
-        }
-        */
 
         s = s.substring(res.length());
 
@@ -317,34 +296,6 @@ public class Parser {
             return new Result<Predicate>(new Predicate(res.toString()), s);
         }
     }
-
-    /* TODO
-    private Result parseSubTerms(String s) throws MathLogicException {
-        if (s.length() > 0 &&  s.charAt(0) == '(') {
-            // todo: do not substr!!! -> as comma() returns Comma obj or some
-            // todo: other obj
-            // todo Result r = comma(s.substring(1));
-            // todo Changed
-            Result r = comma(s);
-            if (r.exp instanceof Brackets) {
-                List<Term> subTerms = new ArrayList<>();
-                subTerms.add(((Brackets) r.exp).term);
-                return new Result<List<Term>>(new Comma(subTerms), r.rest);
-            } else {
-                return r;
-            }
-            // todo
-            if (r.rest.length() > 0 && r.rest.charAt(0) == ')') {
-                r.rest = r.rest.substring(1);
-                return r;
-            } else {
-                throw new MathLogicException("Error in \"" + s + "\". Most probably there is not closed bracket.");
-            }
-            //
-        }
-        throw new MathLogicException("Error in \"" + s + "\". You did smth really wrong.");
-    }
-    */
 
     private Result<Term> bracketsInTerms(String s) throws MathLogicException {
         if (s.length() == 0) {

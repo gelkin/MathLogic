@@ -30,6 +30,8 @@ public class Axioms {
         /* 10 */ Pattern.compile("^[\\(]{1}!!(.+)->\\1[\\)]{1}$")
     };
 
+    // (t=r)->((r=s)->(t=s))
+
     private static Pattern[] arithmeticAxioms = {
         /* A1 */ Pattern.compile(
             "^[\\(]{2}(.+)=(.+)[\\)]{1}->[\\(]{1}\\1'=\\2'[\\)]{2}$"), // ((a = b)->(a' = b'))
@@ -37,7 +39,7 @@ public class Axioms {
             "^[\\(]{2}(.+)=(.+)[\\)]{1}->[\\(]{2}\\1=(.+)[\\)]{1}->[\\(]{1}" + //  ((a = b)->((a = c)->(b = c)))
             "\\2=\\3[\\)]{3}$"),
         /* A3 */ Pattern.compile(
-            "^[\\(]{2}(.+)'=(.+)'[\\)]{1}->[\\(]{1}\\1=\\2[\\)]{2}$"), // ((a' = b')->(a = b)) todo
+            "^[\\(]{2}(.+)'=(.+)'[\\)]{1}->[\\(]{1}\\1=\\2[\\)]{2}$"), // ((a' = b')->(a = b))
         /* A4 */ Pattern.compile(
             "^![\\(]{1}(.+)'=0[\\)]{1}$"), // !(a' = 0)
         /* A5 */ Pattern.compile(
@@ -123,14 +125,32 @@ public class Axioms {
         Matcher matcher;
         String expAsString = exp.toString();
         Expression tmp;
+
+        Expression left;
+        Expression right;
         // A1-A3
         if (exp instanceof Implication) {
             // A1
             if (((Implication) exp).left instanceof Equality &&
                 ((Implication) exp).right instanceof Equality) {
+
                 matcher = arithmeticAxioms[0].matcher(expAsString);
                 if (matcher.matches()) {
                     return true;
+                }
+
+                // more strict way
+                left = ((Implication) exp).left;
+                right = ((Implication) exp).right;
+                if (((Equality) right).left instanceof Increment &&
+                    ((Equality) right).right instanceof Increment) {
+                    if (((Equality) left).left.toString().equals(
+                        ((Increment) ((Equality) right).left).term.toString())
+                        &&
+                        ((Equality) left).right.toString().equals(
+                        ((Increment) ((Equality) right).right).term.toString())) {
+                        return true;
+                    }
                 }
             }
 
@@ -155,6 +175,21 @@ public class Axioms {
                 if (matcher.matches()) {
                     return true;
                 }
+
+                // more strict way
+                left = ((Implication) exp).left;
+                right = ((Implication) exp).right;
+                if (((Equality) left).left instanceof Increment &&
+                    ((Equality) left).right instanceof Increment) {
+                    if (((Equality) right).left.toString().equals(
+                        ((Increment) ((Equality) left).left).term.toString())
+                         &&
+                        ((Equality) right).right.toString().equals(
+                        ((Increment) ((Equality) left).right).term.toString())) {
+                        return true;
+                    }
+                }
+
             }
         }
 
@@ -174,6 +209,52 @@ public class Axioms {
                 matcher = arithmeticAxioms[i].matcher(expAsString);
                 if (matcher.matches()) {
                     return true;
+                }
+            }
+
+            // A5
+            if (((Equality) exp).left instanceof Plus &&
+                ((Equality) exp).right instanceof Increment) {
+
+                // (a1+b1'=(a2+b2)'
+                // more strict way
+                left = ((Equality) exp).left;
+                right = ((Equality) exp).right;
+                if (((Increment) right).term instanceof Plus &&
+                    ((Plus) left).right instanceof Increment) {
+                    // if (a1 == a2 && b1 == b2)
+                    if (((Plus) left).left.toString().equals(
+                        ((Plus) ((Increment) right).term).left.toString())
+                        &&
+                        ((Increment) ((Plus) left).right).term.toString().equals(
+                        ((Plus) ((Increment) right).term).right.toString())) {
+                        return true;
+                    }
+                }
+            }
+
+            // A8
+            if (((Equality) exp).left instanceof Multiply &&
+                ((Equality) exp).right instanceof Plus) {
+
+                // (a1*b1' = a2*b2 + a3)
+                // more strict way
+                left = ((Equality) exp).left;
+                right = ((Equality) exp).right;
+                if (((Multiply) left).right instanceof Increment &&
+                    ((Plus) right).left instanceof Multiply) {
+                    // if (a1 == a2 == a3 && b1 == b2)
+                    if (((Multiply) left).left.toString().equals(
+                        ((Plus) right).right.toString())
+                        &&
+                        ((Multiply) left).left.toString().equals(
+                        ((Multiply) ((Plus) right).left).left.toString())
+                        &&
+                        ((Increment) ((Multiply) left).right).term.toString().equals(
+                        ((Multiply) ((Plus) right).left).right.toString())) {
+
+                        return true;
+                    }
                 }
             }
         }

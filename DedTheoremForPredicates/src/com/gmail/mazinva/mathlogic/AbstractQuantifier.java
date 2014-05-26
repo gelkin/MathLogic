@@ -1,9 +1,6 @@
 package com.gmail.mazinva.mathlogic;
 
-import com.gmail.mazinva.proofcheckingarithmetics.Main;
-
 import java.util.ArrayList;
-import java.util.LinkedList;
 import java.util.List;
 
 public abstract class AbstractQuantifier implements Expression {
@@ -26,11 +23,13 @@ public abstract class AbstractQuantifier implements Expression {
     public abstract String toStringWithReplacedVar(Term term, String var);
 
     protected List<Pair> pathToFirstFreeEntryImpl(String x, String operationType) {
+        List<Pair> resultPath = new ArrayList<Pair>();
         List<Pair> pathFromCurPos = expression.pathToFirstFreeEntry(x);
 
         if (!var.equals(x) && pathFromCurPos != null) {
-            ((LinkedList) pathFromCurPos).addFirst(new Pair(operationType, var));
-            return pathFromCurPos;
+            resultPath.add(new Pair(operationType, var));
+            resultPath.addAll(pathFromCurPos);
+            return resultPath;
         }
 
         return null;

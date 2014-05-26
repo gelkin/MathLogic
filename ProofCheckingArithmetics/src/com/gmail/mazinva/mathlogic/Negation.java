@@ -3,6 +3,7 @@ package com.gmail.mazinva.mathlogic;
 import com.gmail.mazinva.proofcheckingarithmetics.Main;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
 public class Negation extends AbstractUnaryOperation {
@@ -20,9 +21,8 @@ public class Negation extends AbstractUnaryOperation {
         List<Pair> pathFromCurPos = expression.pathToFirstFreeEntry(x);
 
         if (pathFromCurPos != null) {
-            resultPath.add(new Pair(Main.NEGATION, null));
-            resultPath.addAll(pathFromCurPos);
-            return resultPath;
+            ((LinkedList) pathFromCurPos).addFirst(new Pair(Main.NEGATION, null));
+            return pathFromCurPos;
         }
 
         return null;

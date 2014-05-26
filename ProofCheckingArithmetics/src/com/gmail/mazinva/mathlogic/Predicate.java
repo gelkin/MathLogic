@@ -2,6 +2,7 @@ package com.gmail.mazinva.mathlogic;
 
 import com.gmail.mazinva.proofcheckingarithmetics.Main;
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
 public class Predicate implements Expression {
@@ -50,10 +51,8 @@ public class Predicate implements Expression {
         for (int i = 0; i < subTerms.size(); i++) {
             List<Pair> pathFromCurPos = subTerms.get(i).pathToFirstFreeEntry(x);
             if (pathFromCurPos != null) {
-                List<Pair> resultPath = new ArrayList<Pair>();
-                resultPath.add(new Pair(Main.PREDICATE, new Pair(value, i)));
-                resultPath.addAll(pathFromCurPos);
-                return resultPath;
+                ((LinkedList) pathFromCurPos).addFirst(new Pair(Main.PREDICATE, new Pair(value, i)));
+                return pathFromCurPos;
             }
         }
 

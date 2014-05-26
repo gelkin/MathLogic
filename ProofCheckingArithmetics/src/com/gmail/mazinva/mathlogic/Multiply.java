@@ -11,9 +11,20 @@ public class Multiply extends AbstBinArithOper {
         super(left, right);
     }
 
-    // todo life ...
     public String toString() {
-        return left.toString() + "*" + right.toString();
+        String res = "";
+        if (left instanceof Plus) {
+            res += "(" + left.toString() + ")";
+        } else {
+            res += left.toString();
+        }
+        res += "*";
+        if (right instanceof Plus) {
+            res += "(" + right.toString() + ")";
+        } else {
+            res += right.toString();
+        }
+        return res;
     }
 
     public List<Pair> pathToFirstFreeEntry(String x) {

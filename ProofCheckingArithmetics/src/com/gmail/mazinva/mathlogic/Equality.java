@@ -3,6 +3,7 @@ package com.gmail.mazinva.mathlogic;
 import com.gmail.mazinva.proofcheckingarithmetics.Main;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
 public class Equality extends AbstractBinaryOperation {
@@ -15,22 +16,27 @@ public class Equality extends AbstractBinaryOperation {
         return "(" + left.toString() + "=" + right.toString() + ")";
     }
 
+    public Expression getLeft() {
+        return left;
+    }
+
+    public Expression getRight() {
+        return right;
+    }
+
     public List<Pair> pathToFirstFreeEntry(String x) {
-        List<Pair> resultPath = new ArrayList<Pair>();
         List<Pair> pathFromCurPos;
 
         pathFromCurPos = left.pathToFirstFreeEntry(x);
         if (pathFromCurPos != null) {
-            resultPath.add(new Pair(Main.EQUALITY, "left"));
-            resultPath.addAll(pathFromCurPos);
-            return resultPath;
+            ((LinkedList) pathFromCurPos).addFirst(new Pair(Main.EQUALITY, "left"));
+            return pathFromCurPos;
         }
 
         pathFromCurPos = right.pathToFirstFreeEntry(x);
         if (pathFromCurPos != null) {
-            resultPath.add(new Pair(Main.EQUALITY, "right"));
-            resultPath.addAll(pathFromCurPos);
-            return resultPath;
+            ((LinkedList) pathFromCurPos).addFirst(new Pair(Main.EQUALITY, "right"));
+            return pathFromCurPos;
         }
 
         return null;

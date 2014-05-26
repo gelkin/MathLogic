@@ -165,7 +165,7 @@ public class Parser {
 
     private Result<List<Term>> parseSubTerms(String s) throws MathLogicException {
         if (s.length() > 0 &&  s.charAt(0) == '(') {
-            Result r = coma(s.substring(1));
+            Result r = comma(s.substring(1));
             if (r.rest.length() > 0 && r.rest.charAt(0) == ')') {
                 r.rest = r.rest.substring(1);
                 return r;
@@ -177,7 +177,7 @@ public class Parser {
     }
 
     // Coma takes List of terms, returns List of terms
-    private Result<List<Term>> coma(String s) throws MathLogicException {
+    private Result<List<Term>> comma(String s) throws MathLogicException {
         Result<Term> current = bracketsInTerms(s);
         Term exp = current.exp;
 
@@ -205,7 +205,7 @@ public class Parser {
         }
         char ch = s.charAt(0);
         if (ch == '(') {
-            Result<List<Term>> r = coma(s.substring(1));
+            Result<List<Term>> r = comma(s.substring(1));
             if (r.rest.length() > 0 && r.rest.charAt(0) == ')') {
                 r.rest = r.rest.substring(1);
             } else {
@@ -239,7 +239,7 @@ public class Parser {
 
         Result<List<Term>> result;
         if (s.length() > 0 && s.charAt(0) == '(') {
-            result = coma(s.substring(1));
+            result = comma(s.substring(1));
             return new Result<Term>((new Term(res.toString(), result.exp)), result.rest.substring(1));
         } else {
             return new Result<Term>(new Term(res.toString()), s);
