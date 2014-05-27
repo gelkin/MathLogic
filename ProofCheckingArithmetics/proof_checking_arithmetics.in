@@ -1,1 +1,1 @@
-@a?bP(a,a1,a2,a3)->?bP(b,a1,a2,a3)
+@y@xP(x,y)->@xP(x,y+x)

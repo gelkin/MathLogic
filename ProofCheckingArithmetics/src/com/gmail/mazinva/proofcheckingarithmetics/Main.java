@@ -1,4 +1,3 @@
-
 package com.gmail.mazinva.proofcheckingarithmetics;
 
 import com.gmail.mazinva.mathlogic.*;
@@ -27,6 +26,8 @@ public class Main {
     public static final String INCORRECT_INPUT = "Вывод некорректен начиная с формулы номер ";
     public static final String CORRECT_PROOF_MSG = "Доказательство корректно.";
 
+    public static final int START_INDEX = 0;
+
     private FastScanner in;
     private PrintWriter out;
 
@@ -44,7 +45,7 @@ public class Main {
         // Check proof
         Expression curExp;
         String curLine;
-        for (int i = 0; i < inputProof.size(); i++) {
+        for (int i = START_INDEX; i < inputProof.size(); i++) {
             curExp = inputProof.get(i);
             curLine = curExp.toString();
 

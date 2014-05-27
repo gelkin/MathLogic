@@ -209,12 +209,13 @@ public class Axioms {
 
                         Pair pair = (Pair) expPair.additionalInfo;
                         List<Term> subTerms = ((Term) exp).getSubTerms();
+
+                        if (pair == null) {
+                            return (Term) exp; //  found it
+                        }
+
                         if (subTerms == null) {
-                            if (pair == null) { // that is in original phi here was variable
-                                return (Term) exp;
-                            } else {
-                                return null;
-                            }
+                            return null; // still have path but no subTerms in 'exp'
                         } else if (subTerms.size() > ((Integer) pair.additionalInfo)) {
 
                             if (("".equals(((Term) exp).getValue()) == // first condition

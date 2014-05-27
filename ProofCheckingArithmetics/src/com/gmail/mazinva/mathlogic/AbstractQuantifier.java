@@ -1,8 +1,5 @@
 package com.gmail.mazinva.mathlogic;
 
-import com.gmail.mazinva.proofcheckingarithmetics.Main;
-
-import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -48,11 +45,12 @@ public abstract class AbstractQuantifier implements Expression {
         if (this.var.equals(var)) {
             return true;
         }
-        if (this.var.equals(term.toString()) && expression.pathToFirstFreeEntry(var) != null) {
+
+        if (term.pathToFirstFreeEntry(this.var) != null && expression.pathToFirstFreeEntry(var) != null) {
             return false;
         } else {
             return expression.isFreeToReplace(term, var);
         }
-    }
+    }   
 
 }

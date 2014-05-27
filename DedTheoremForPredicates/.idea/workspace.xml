@@ -12,7 +12,7 @@
     <file path="/Term.java" changelist="2d604920-f95f-44b7-86af-744f56d900e0" time="1399914650524" ignored="false" />
     <file path="/Result.java" changelist="2d604920-f95f-44b7-86af-744f56d900e0" time="1396523819898" ignored="false" />
     <file path="$PROJECT_DIR$/../../CSCenter/Algo/Fib2/src/Main.java" changelist="2d604920-f95f-44b7-86af-744f56d900e0" time="1396866812381" ignored="false" />
-    <file path="/Main.java" changelist="2d604920-f95f-44b7-86af-744f56d900e0" time="1400594586147" ignored="false" />
+    <file path="/Main.java" changelist="2d604920-f95f-44b7-86af-744f56d900e0" time="1401223164296" ignored="false" />
     <file path="/Implication.java" changelist="2d604920-f95f-44b7-86af-744f56d900e0" time="1397463831354" ignored="false" />
     <file path="/Pair.java" changelist="2d604920-f95f-44b7-86af-744f56d900e0" time="1397059727422" ignored="false" />
     <file path="/Expression.java" changelist="2d604920-f95f-44b7-86af-744f56d900e0" time="1397135433051" ignored="false" />
@@ -34,7 +34,7 @@
     <file path="$PROJECT_DIR$/../../JavaHW/4sem/Implementor/src/ru/ifmo/ctddev/mazin/task3/AA1.java" changelist="2d604920-f95f-44b7-86af-744f56d900e0" time="1397121399911" ignored="false" />
     <file path="/AA1.java" changelist="2d604920-f95f-44b7-86af-744f56d900e0" time="1397121398767" ignored="false" />
     <file path="/Negation.java" changelist="2d604920-f95f-44b7-86af-744f56d900e0" time="1397339410827" ignored="false" />
-    <file path="/Axioms.java" changelist="2d604920-f95f-44b7-86af-744f56d900e0" time="1399918884884" ignored="false" />
+    <file path="/Axioms.java" changelist="2d604920-f95f-44b7-86af-744f56d900e0" time="1401223046316" ignored="false" />
     <file path="/Disjunction.java" changelist="2d604920-f95f-44b7-86af-744f56d900e0" time="1397127022183" ignored="false" />
     <file path="/fragment.java" changelist="2d604920-f95f-44b7-86af-744f56d900e0" time="1400740657053" ignored="false" />
     <file path="/Dummy.txt" changelist="2d604920-f95f-44b7-86af-744f56d900e0" time="1397137115950" ignored="false" />
@@ -74,7 +74,7 @@
     <file path="$PROJECT_DIR$/../ProofCheckingArithmetics/src/com/gmail/mazinva/mathlogic/Negation.java" changelist="2d604920-f95f-44b7-86af-744f56d900e0" time="1399375749200" ignored="false" />
     <file path="$PROJECT_DIR$/../ProofCheckingArithmetics/src/com/gmail/mazinva/mathlogic/Disjunction.java" changelist="2d604920-f95f-44b7-86af-744f56d900e0" time="1399375749200" ignored="false" />
     <file path="$PROJECT_DIR$/../ProofCheckingArithmetics/src/com/gmail/mazinva/mathlogic/TermWithArgs.java" changelist="2d604920-f95f-44b7-86af-744f56d900e0" time="1399384132191" ignored="false" />
-    <file path="$PROJECT_DIR$/../ProofCheckingArithmetics/src/com/gmail/mazinva/proofcheckingarithmetics/Main.java" changelist="2d604920-f95f-44b7-86af-744f56d900e0" time="1401132286046" ignored="false" />
+    <file path="$PROJECT_DIR$/../ProofCheckingArithmetics/src/com/gmail/mazinva/proofcheckingarithmetics/Main.java" changelist="2d604920-f95f-44b7-86af-744f56d900e0" time="1401223514748" ignored="false" />
     <file path="/TermWithArgs.java" changelist="2d604920-f95f-44b7-86af-744f56d900e0" time="1399384131808" ignored="false" />
     <file path="$PROJECT_DIR$/../ProofCheckingArithmetics/src/com/gmail/mazinva/mathlogic/Term.java" changelist="2d604920-f95f-44b7-86af-744f56d900e0" time="1399914664184" ignored="false" />
     <file path="$PROJECT_DIR$/../ProofCheckingArithmetics/src/com/gmail/mazinva/mathlogic/Zero.java" changelist="2d604920-f95f-44b7-86af-744f56d900e0" time="1399914754101" ignored="false" />
@@ -84,10 +84,10 @@
     <file path="/AbstUnArithOper.java" changelist="2d604920-f95f-44b7-86af-744f56d900e0" time="1399384157704" ignored="false" />
     <file path="$PROJECT_DIR$/../ProofCheckingArithmetics/src/com/gmail/mazinva/mathlogic/AbstBinArithOper.java" changelist="2d604920-f95f-44b7-86af-744f56d900e0" time="1399914912816" ignored="false" />
     <file path="/AbstBinArithOper.java" changelist="2d604920-f95f-44b7-86af-744f56d900e0" time="1399384161960" ignored="false" />
-    <file path="$PROJECT_DIR$/../ProofCheckingArithmetics/proof_checking_arithmetics.out" changelist="2d604920-f95f-44b7-86af-744f56d900e0" time="1401132448566" ignored="false" />
-    <file path="$PROJECT_DIR$/../ProofCheckingArithmetics/proof_checking_arithmetics.in" changelist="2d604920-f95f-44b7-86af-744f56d900e0" time="1401132438921" ignored="false" />
+    <file path="$PROJECT_DIR$/../ProofCheckingArithmetics/proof_checking_arithmetics.out" changelist="2d604920-f95f-44b7-86af-744f56d900e0" time="1401223493811" ignored="false" />
+    <file path="$PROJECT_DIR$/../ProofCheckingArithmetics/proof_checking_arithmetics.in" changelist="2d604920-f95f-44b7-86af-744f56d900e0" time="1401223489510" ignored="false" />
     <file path="/proof_checking_arithmetics.out" changelist="2d604920-f95f-44b7-86af-744f56d900e0" time="1399903098083" ignored="false" />
-    <file path="/proof_checking_arithmetics.in" changelist="2d604920-f95f-44b7-86af-744f56d900e0" time="1401132431498" ignored="false" />
+    <file path="/proof_checking_arithmetics.in" changelist="2d604920-f95f-44b7-86af-744f56d900e0" time="1401223432091" ignored="false" />
     <file path="$PROJECT_DIR$/../ProofCheckingArithmetics/src/com/gmail/mazinva/mathlogic/Plus.java" changelist="2d604920-f95f-44b7-86af-744f56d900e0" time="1399904103546" ignored="false" />
     <file path="/Plus.java" changelist="2d604920-f95f-44b7-86af-744f56d900e0" time="1399904095502" ignored="false" />
     <file path="$PROJECT_DIR$/../ProofCheckingArithmetics/src/com/gmail/mazinva/mathlogic/Multiply.java" changelist="2d604920-f95f-44b7-86af-744f56d900e0" time="1399904121962" ignored="false" />
@@ -97,9 +97,9 @@
     <file path="/Increment.java" changelist="2d604920-f95f-44b7-86af-744f56d900e0" time="1399916778307" ignored="false" />
     <file path="$PROJECT_DIR$/../ProofCheckingArithmetics/src/com/gmail/mazinva/mathlogic/Increment.java" changelist="2d604920-f95f-44b7-86af-744f56d900e0" time="1399916812498" ignored="false" />
     <file path="$PROJECT_DIR$/../StatementsProving/statementsProving.in" changelist="2d604920-f95f-44b7-86af-744f56d900e0" time="1399919150394" ignored="false" />
-    <file path="$PROJECT_DIR$/../ProofCheckingArithmetics/src/com/gmail/mazinva/mathlogic/AbstractQuantifier.java" changelist="2d604920-f95f-44b7-86af-744f56d900e0" time="1400690156939" ignored="false" />
+    <file path="$PROJECT_DIR$/../ProofCheckingArithmetics/src/com/gmail/mazinva/mathlogic/AbstractQuantifier.java" changelist="2d604920-f95f-44b7-86af-744f56d900e0" time="1401223387845" ignored="false" />
     <file path="/ded_theorem_predicates.out" changelist="2d604920-f95f-44b7-86af-744f56d900e0" time="1400689040308" ignored="false" />
-    <file path="/AbstractQuantifier.java" changelist="2d604920-f95f-44b7-86af-744f56d900e0" time="1400690134807" ignored="false" />
+    <file path="/AbstractQuantifier.java" changelist="2d604920-f95f-44b7-86af-744f56d900e0" time="1401223283568" ignored="false" />
     <file path="$PROJECT_DIR$/../../JavaHW/ClientServerUDP/HelloUDPServer/src/ru/ifmo/ctddev/mazin/task8/Message.java" changelist="2d604920-f95f-44b7-86af-744f56d900e0" time="1400741023604" ignored="false" />
     <file path="/Message.java" changelist="2d604920-f95f-44b7-86af-744f56d900e0" time="1400740953893" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -116,6 +116,8 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
+    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -152,8 +154,6 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true" />
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -166,7 +166,7 @@
       <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/gmail/mazinva/dedtheorempredicates/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="248" column="42" selection-start="9078" selection-end="9078" vertical-scroll-proportion="0.0">
+            <state line="66" column="0" selection-start="2186" selection-end="2186" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -176,10 +176,7 @@
         <entry file="file://$PROJECT_DIR$/src/com/gmail/mazinva/mathlogic/AbstractQuantifier.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="8" column="0" selection-start="224" selection-end="224" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#723#729#0" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -187,7 +184,34 @@
       <file leaf-file-name="ded_theorem_predicates.in" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ded_theorem_predicates.in">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="0" selection-start="48" selection-end="88" vertical-scroll-proportion="0.17391305">
+            <state line="3" column="19" selection-start="100" selection-end="100" vertical-scroll-proportion="0.1613924">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Axioms.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/gmail/mazinva/mathlogic/Axioms.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="215" column="0" selection-start="8334" selection-end="8334" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Term.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/gmail/mazinva/mathlogic/Term.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="28" column="0" selection-start="616" selection-end="616" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Predicate.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/gmail/mazinva/mathlogic/Predicate.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="24" column="0" selection-start="549" selection-end="549" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -205,25 +229,7 @@
       <file leaf-file-name="ded_theorem_predicates.out" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ded_theorem_predicates.out">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="0" selection-start="129" selection-end="129" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Conjunction.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/gmail/mazinva/mathlogic/Conjunction.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="47" selection-start="1400" selection-end="1400" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Result.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/gmail/mazinva/mathlogic/Result.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="0" selection-start="204" selection-end="204" vertical-scroll-proportion="0.0">
+            <state line="0" column="75" selection-start="75" selection-end="75" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -232,7 +238,7 @@
       <file leaf-file-name="Forall.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/gmail/mazinva/mathlogic/Forall.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="4" selection-start="196" selection-end="196" vertical-scroll-proportion="0.0">
+            <state line="23" column="0" selection-start="554" selection-end="554" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -242,15 +248,6 @@
         <entry file="file://$PROJECT_DIR$/src/com/gmail/mazinva/mathlogic/Exist.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="8" column="45" selection-start="189" selection-end="189" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Disjunction.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/gmail/mazinva/mathlogic/Disjunction.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="13" selection-start="156" selection-end="156" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -274,14 +271,14 @@
         <option value="$PROJECT_DIR$/src/com/gmail/mazinva/mathlogic/Term.java" />
         <option value="$PROJECT_DIR$/src/com/gmail/mazinva/mathlogic/Predicate.java" />
         <option value="$PROJECT_DIR$/src/com/gmail/mazinva/mathlogic/Conjunction.java" />
-        <option value="$PROJECT_DIR$/src/com/gmail/mazinva/mathlogic/Axioms.java" />
         <option value="$PROJECT_DIR$/src/com/gmail/mazinva/mathlogic/Parser.java" />
-        <option value="$PROJECT_DIR$/src/com/gmail/mazinva/dedtheorempredicates/Main.java" />
         <option value="$PROJECT_DIR$/ded_theorem_predicates.out" />
         <option value="$PROJECT_DIR$/src/com/gmail/mazinva/mathlogic/AbstractQuantifier.java" />
         <option value="$PROJECT_DIR$/src/com/gmail/mazinva/mathlogic/Forall.java" />
         <option value="$PROJECT_DIR$/src/com/gmail/mazinva/mathlogic/Exist.java" />
+        <option value="$PROJECT_DIR$/src/com/gmail/mazinva/dedtheorempredicates/Main.java" />
         <option value="$PROJECT_DIR$/ded_theorem_predicates.in" />
+        <option value="$PROJECT_DIR$/src/com/gmail/mazinva/mathlogic/Axioms.java" />
       </list>
     </option>
   </component>
@@ -317,8 +314,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -401,6 +396,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -411,7 +408,7 @@
     <property name="recentsLimit" value="5" />
     <property name="options.lastSelected" value="com.genymobile.genymotion.ide.idea.GdmSettings" />
     <property name="MemberChooser.sorted" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../JavaHW/ClientServerUDP/HelloUDPServer" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ProofCheckingArithmetics" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
@@ -694,18 +691,18 @@
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.023904383" sideWeight="0.6736" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3984" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4928" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29800797" sideWeight="0.2" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3552" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.354067" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24940239" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="JProfiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25418326" sideWeight="0.7008" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2992" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2" sideWeight="0.5808" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4192" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32988048" sideWeight="0.6736" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24940239" sideWeight="0.6752" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -786,21 +783,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/examples/intro.in">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="13" selection-start="39" selection-end="39" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/examples/intro2.in">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="7192" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/examples/must-fail.in">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="21" selection-start="47" selection-end="47" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/examples/must-fail2.in">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="0" selection-start="60" selection-end="60" vertical-scroll-proportion="0.0" />
@@ -839,20 +821,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/gmail/mazinva/dedtheorempredicates/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="248" column="42" selection-start="9078" selection-end="9078" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/gmail/mazinva/mathlogic/Forall.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="4" selection-start="196" selection-end="196" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/gmail/mazinva/mathlogic/Expression.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="17" selection-start="79" selection-end="79" vertical-scroll-proportion="0.0">
@@ -870,23 +838,55 @@
     <entry file="file://$PROJECT_DIR$/src/com/gmail/mazinva/mathlogic/AbstractQuantifier.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="0" selection-start="224" selection-end="224" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#723#729#0" expanded="true" />
-          </folding>
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/gmail/mazinva/dedtheorempredicates/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="66" column="0" selection-start="2186" selection-end="2186" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/gmail/mazinva/mathlogic/Forall.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="0" selection-start="554" selection-end="554" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/gmail/mazinva/mathlogic/Predicate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="0" selection-start="549" selection-end="549" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/gmail/mazinva/mathlogic/Term.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="0" selection-start="616" selection-end="616" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/gmail/mazinva/mathlogic/Axioms.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="215" column="0" selection-start="8334" selection-end="8334" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ded_theorem_predicates.out">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="129" selection-end="129" vertical-scroll-proportion="0.0">
+        <state line="0" column="75" selection-start="75" selection-end="75" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ded_theorem_predicates.in">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="48" selection-end="88" vertical-scroll-proportion="0.17391305">
+        <state line="3" column="19" selection-start="100" selection-end="100" vertical-scroll-proportion="0.1613924">
           <folding />
         </state>
       </provider>
